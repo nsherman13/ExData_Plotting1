@@ -15,8 +15,8 @@ plot(x = clean_data$DateTime, y = clean_data$Voltage,type = "l",xlab = "datetime
 plot(x= clean_data$DateTime,y = clean_data$Sub_metering_1,col = "black",type = "l",xlab = "",ylab = "Energy Sub metering")
 lines(x = clean_data$DateTime,y = clean_data$Sub_metering_2, col = "red")
 lines(x = clean_data$DateTime,y = clean_data$Sub_metering_3, col = "blue")
-legend("topright",border = "white",c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"), lty = 1, 
-       col = c("black", "red","blue"),cex = .7)
+legend("topright",bty = "n",c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"), lty = 1, 
+       col = c("black", "red","blue"))
 plot(x = clean_data$DateTime, y = clean_data$Global_reactive_power,type = "l",xlab = "datetime",ylab = "Global_reactive_power")
 #turn off png device
 dev.off()
